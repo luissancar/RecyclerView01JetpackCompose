@@ -31,7 +31,7 @@ fun ItemPollo(pollo: Pollo, onItemSelected: (Pollo) -> Unit) {
             Image(
                 painter = painterResource(id = pollo.photo),
                 contentDescription = null,
-                modifier = Modifier.fillMaxWidth().height(100.dp),
+                modifier = Modifier.fillMaxWidth(), //.height(100.dp),
                 contentScale = ContentScale.Crop
             )
             Text(text = pollo.name, modifier = Modifier.align(Alignment.CenterHorizontally))
